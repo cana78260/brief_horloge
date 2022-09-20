@@ -24,7 +24,7 @@ const degHeure = 0.00833;
 const degMinute = 0.1;
 const degSeconde = 6;
 
-let heure_Actuelle = heure * degHeure * 3600;
+let heure_Actuelle = heure * degHeure * 3600 + degHeure * 60 * minute;
 console.log(heure_Actuelle);
 let minute_Acuelle = minute * degMinute * 60;
 //console.log(minute_Acuelle);
@@ -43,5 +43,3 @@ function demarrerLaMontre() {
 }
 // Exercuter la fonction chaque second
 var interval = setInterval(demarrerLaMontre, 1000);
-
-
